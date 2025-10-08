@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* width: 100%; */
+    font-family: sans-serif;
+}
+
+#wrapper {
+    height: 100%;
+    overflow: hidden;
+    background-color: #CCE2C2;
+}
+
+#wrapper.green-bg {
+    background-color: #CCE2C2;
+}
+
+#wrapper.yellow-bg {
+    background-color: #E4E5C7;
+}
+
+#wrapper.red-bg {
+    background-color: #DBADAD;
+}
+
+
+.quiz-container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    padding-top: 10px;
+    padding-inline: 10px 18px;
+    margin: 0 auto;
+    background-color: inherit;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-icon {
+    width: 200px;
+}
+
+.second-icon {
+    height: 16px;
+    width: 23px;
+    cursor: pointer;
+}
+
+.second-icon.hidden {
+    display: none;
+}
+
+.third-icon {
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.third-icon.visible {
+    display: block;
+}
+
+.ques-no {
+    display: flex;
+    justify-content: start;
+}
+
+.ques-no span {
+    padding: 5px 10px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border-radius: 4px;
+    margin-block: 10px 20px;
+}
+
+.question-container {
+    position: relative;
+    height: 60.667px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgba(245, 245, 245, 0.48);
+    z-index: 0;
+}
+
+.inner-question-container {
+    position: absolute;
+    width: 100%;
+    height: 60.667px;
+    top: -4px;
+    left: 8px;
+    right: -8px;
+    bottom: -4px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgba(245, 245, 245, 0.48);
+    z-index: 1;
+}
+
+.timeout {
+    display: flex;
+    justify-content: end;
+}
+
+.time-left {
+    background-color: #44B945;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-block: 16px 20px;
+}
+
+.time-left.yellow-timeout-bg {
+    background-color: #CFC140;
+}
+
+.time-left.red-timeout-bg {
+    background-color: #CC4038;
+}
+
+.option-container {
+    position: relative;
+    height: 281.32px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.48);
+}
+
+.inner-option-container {
+    position: absolute;
+    top: -4px;
+    left: 8px;
+    right: -8px;
+    bottom: -4px;
+    height: 281.32px;
+    width: 100%;
+    padding: 30px 20px 30px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.48);
+}
+
+.option {
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid rgb(217, 217, 217);
+}
+
+.option p {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.option p img {
+    width: 20px;
+}
+
+.option p span {
+    position: absolute;
+    top: 4px;
+    right: 30px;
+    font-size: 12px;
+    text-wrap: nowrap;
+}
+
+.wrong-icon {
+    display: none;
+}
+
+.right-icon {
+    display: none;
+}
+
+.wrong-icon.visible {
+    display: block;
+}
+
+.right-icon.visible {
+    display: block;
+}
+
+.green {
+    border: 3px solid green;
+}
+
+.active.green {
+    border: 3px solid green;
+}
+
+.active.red {
+    border: 3px solid red;
+}
+
+.next-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.next-btn a {
+    color: #01AB08;
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration-line: none;
+}
+
+.next-btn a.yellow-text {
+    color: #C58854;
+}
+
+.next-btn a.red-text {
+    color: #C50000;
+}
+
+.made-with {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        padding-top: 50px;
+    }
+
+    .option {
+        font-size: 14px;
+    }
+
+    .option-container {
+        height: 296px;
+    }
+
+    .inner-option-container {
+        height: 296px;
+    }
+
+    .question-container {
+        font-size: 16px;
+        height: 58.76px;
+    }
+
+    .inner-question-container {
+        font-size: 16px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz-container {
+        padding-top: 30px;
+    }
+}

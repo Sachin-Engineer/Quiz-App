@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+#wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #eaeaea;
+    /* overflow-x: hidden; */
+}
+
+.result-container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: rgb(240, 237, 237); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.result-container img {
+    width: 150px;
+}
+
+.result-container h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.result-chart-box {
+    position: relative;
+    width: 200px;
+    /* height: 200px; */
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.outer-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    padding: 25px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* border: 1px solid red; */
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+
+}
+
+.percentage {
+    font-weight: 600;
+    color: #555;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* This is created and updated by Javascript in HTML head*/
+/* circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 25px;
+    stroke-dasharray: 545;
+    stroke-dashoffset: 545;
+    animation: animateCircle 1500ms linear forwards;
+}
+@keyframes animateCircle {
+    100% {
+        stroke-dashoffset: 0;
+    }
+} */
+
+.attempted-questions {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.comments {
+    font-size: 20px;
+}
+
+.retry-btn {
+    position: relative;
+    font-weight: 600;
+    padding: 10px 10px 10px 45px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    background-color: #35BD3A;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration-line: none;
+    box-shadow: 2px 2px 6px 0 rgb(71, 71, 71);
+    transition: all 0.2s ease-in-out;
+}
+
+.retry-btn:hover {
+    background-color: #696969;
+    transform: scale(1.1);
+}
+
+.back1 {
+    position: absolute;
+    top: 11px;
+    left: 5px;
+}
+
+.back2 {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+
+.back3 {
+    position: absolute;
+    top: 11px;
+    left: 25px;
+}
+
+.social-media-icons {
+    margin-bottom: 40px;
+}
+
+.social-media-icons img {
+    width: 20px;
+}
+
+.made-with {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .comments {
+        font-size: 16px;
+    }
+}

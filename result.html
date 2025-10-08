@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="result.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="result.js" defer></script>
+    <title>Result Tab</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="result-container">
+            <img src="./images/Quiz Time logo.png" alt="Quiz-Time logo">
+
+            <h2>Result</h2>
+
+            <div class="result-chart-box">
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <div class="percentage">65%</div>
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="87.5" stroke-linecap="round" />
+                </svg>
+
+                <div class="attempted-questions"><b>Attempted:</b> <span></span>/10</div>
+            </div>
+
+            <b class="comments"></b>
+
+            <a class="retry-btn" href="/index.html"><i class="back1 fa-solid fa-angle-left fa-fade"></i><i class="back2 fa-solid fa-angle-left fa-fade"></i><i class="back3 fa-solid fa-angle-left fa-fade"></i>Retry</a>
+
+            <p class="share-your-score" style="margin-bottom: 5px;"><b>Share your score:</b></p>
+            <div class="social-media-icons">
+                <a href="https://www.x.com"><img src="./images/Twitter.png" alt=""></a>
+                <a href="https://www.linkedin.com"><img src="./images/LinkedIn.png" alt=""></a>
+                <a href="https://www.instagram.com"><img src="./images/Instagram.png" alt=""></a>
+            </div>
+        </div>
+
+        <p class="made-with">Made with ❤️ by Sachin Kumar</p>
+    </div>
+</body>
+
+</html>
