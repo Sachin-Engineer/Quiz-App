@@ -2,10 +2,11 @@
 
 A responsive and interactive web-based quiz application built with vanilla JavaScript, HTML, and CSS. This project showcases modern front-end development techniques, including dynamic DOM manipulation, event handling, state management with `localStorage`, and CSS animations.
 
-**Live Demo:** **[quiz-app-22-flame.vercel.app]** 👈 *(Deploy your project to a service like GitHub Pages, Netlify, or Vercel and place the link here)*
+**Live Demo:** quiz-app-22-flame.vercel.app
 
- 
-*(**Suggestion:** Take a screenshot of your app, upload it to a site like Imgur, and replace the link above.)*
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 ## ✨ Key Features
 
