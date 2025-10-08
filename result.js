@@ -55,10 +55,6 @@ function replaceKeyframes(newOffset, styleAnimationTime) {
         }
     `;
 
-  styleAnimationTime.id = 'dynamic-animation-time';
-
-
-
   // Append the new style to the document head
   document.head.appendChild(style);
 }
